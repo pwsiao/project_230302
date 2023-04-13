@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大小霸尖山</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./generalstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        ul>li>a {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .animate__zoomIn {
+            --animate-duration: 2s;
+            --animate-delay: 2s;
+        }
+
+        header>h1 {
+            letter-spacing: 13px;
+            font-size: 65px;
+            font-style: italic;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tablink {
+            box-sizing: border-box;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+            background-color: wheat;
+            color: black;
+            border: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .tablink:hover {
+            background-color: rgb(240, 230, 140, 0.7);
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            box-sizing: border-box;
+            background-color: khaki;
+            color: black;
+            display: none;
+            padding: 60px 50px;
+            height: 100%;
+        }
+
+        table {
+            table-layout: auto;
+            /* width: auto; */
+
+            border-collapse: separate;
+            border-spacing: 0;
+
+        }
+
+
+        tr,
+        td {
+            /* width: max-content; */
+
+            /* height: 30px; */
+            text-align: center;
+            padding: 10px 30px;
+            border: 2px solid white;
+            background-color: blanchedalmond;
+        }
+
+        #infota td:nth-child(2),
+        #otherta td:nth-child(2) {
+            padding: 10px 70px 10px 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header style="position: relative;">
+        <img src="./img/8.jpg" alt=""
+            style="width: 100%; opacity:0.8; height: 320px; object-fit: cover;object-position:50% 35%;">
+        <h1 class="animate__animated animate__zoomIn">
+            大小霸尖山</h1>
+    </header>
+
+    <!-- nav -->
+    <div class="nav1" style=" width:100%; ">
+        <div class="container">
+            <nav class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link" aria-current="page"
+                            style="color:#b7e792; font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show active" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                            <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                            <li class="nav-item"><a href="./Weather.html" class="nav-link">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 留白排版用 -->
+    <div style="height: 50px;"></div>
+
+
+    <div class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" style="width: 80%;">
+            <!-- 內文 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位於雪山山脈的大霸尖山海拔3492公尺，山勢磅礡壯麗，有「世紀奇峰」之美譽，自古是泰雅、賽夏兩原住民族的聖山；山形突出四面懸壁寸草不生，外貌有如大酒桶，又稱「熬酒桶山」或「酒桶山」，與中央尖山、達芬尖山，合稱為「台灣三尖」。
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大霸尖山步道為聖稜線端點之一，可登加利山、伊澤山、大霸尖山、小霸尖山共四座百岳，且九九山莊可容納250-300人，雖然因為20公里的大鹿林道東線僅開放步行，增加負重裝的登山難度與天數，仍為受歡迎的路線。春天在3050高地到中霸坪一帶可欣賞玉山杜鵑，深秋則可見火紅的台灣馬醉木，四季展現迷人的風情。
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <!-- Tab首列 -->
+            <div class="row">
+                <div class="col-md-3"><button class="tablink" onclick="openPage('info', this)"
+                        id="defaultOpen">基本資料</button>
+                </div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('gmap', this)">地理資訊</button></div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('route', this)">建議行程</button>
+                </div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('other', this)">交通方式</button>
+                </div>
+            </div>
+            <!-- Tab內文 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- info -->
+                    <div id="info" class="tabcontent">
+                        <div class="container d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table id="infota">
+                                        <tr>
+                                            <td style="border-top-left-radius: 10px;">所在縣市</td>
+                                            <td style="border-top-right-radius: 10px;">新竹縣尖石鄉、苗栗縣泰安鄉</td>
+                                        </tr>
+                                        <tr>
+                                            <td>百岳</td>
+                                            <td>大霸尖山 3492m <br>小霸尖山 3418m
+                                                <br>伊澤山 3297m<br>加利山 3112m
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>里程</td>
+                                            <td>單程31公里</td>
+                                        </tr>
+                                        <tr>
+                                            <td>海拔高度</td>
+                                            <td>2050~3492公尺</td>
+                                        </tr>
+                                        <tr>
+                                            <td>高度落差</td>
+                                            <td>1442公尺</td>
+                                        </tr>
+                                        <tr>
+                                            <td>管理單位</td>
+                                            <td>新竹林區管理處</td>
+                                        </tr>
+                                        <tr>
+                                            <td>申請入園</td>
+                                            <td>是，<a style="text-decoration: none;color: green;" target="_blank"
+                                                    href="https://npm.cpami.gov.tw/apply_1_2.aspx?unit=e6dd4652-2d37-4346-8f5d-6e538353e0c2">前往申請</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>申請入山</td>
+                                            <td>否</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-bottom-left-radius: 10px;">相關山屋</td>
+                                            <td style="border-bottom-right-radius: 10px;"> 九九山莊
+                                                <a class="btn bg-warning"
+                                                    href="https://99online.forest.gov.tw/">宿營地查詢</a>
+
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- map -->
+                    <div id="gmap" class="tabcontent">
+                        <h3></h3>
+                        <div id="map" style="height: 400px;width: 100%;"></div>
+
+                    </div>
+                    <!-- route -->
+                    <div id="route" class="tabcontent">
+                        <h3></h3>
+                        <div>
+                            <blockquote>
+                                D1: 觀霧山莊 →（19.0K，360分鐘）→ 馬達拉溪登山口 →（4.0K，210分鐘）→ 九九山莊
+                            </blockquote>
+                            <blockquote>
+                                D2: 九九山莊 → （1.3K，50分鐘）→ 白橋（加利山岔路口） → （0.7K，40分鐘）→ 3050高地（加利山岔路口） →（2.3K，65分鐘）→ 伊澤山捷徑岔
+                                →（0.5K，25分鐘）→ 伊澤山登山口 →（0.8K，25分鐘）→ 中霸山屋 →（0.7K，40分鐘）→ 中霸坪 →（1.0K，30分鐘）→ 大霸尖山霸基 →（折返） →
+                                （1.0K，30分鐘）→ 中霸坪 →（0.7K，40分鐘）→ 中霸山屋 → （0.8K，35分鐘）→ 伊澤山登山口 →（0.5K，20分鐘）→ 伊澤山捷徑岔 →
+                                （2.3K，40分鐘）→ 3050高地（加利山岔路口） → （2.0K，50分鐘）→ 九九山莊
+                            </blockquote>
+                            <blockquote>
+                                D3: 九九山莊 →（4.0K，130分鐘）→ 馬達拉溪登山口 →（19.0K，360分鐘）→ 觀霧山莊
+                            </blockquote>
+                        </div>
+                        <div>
+                            <figure style="overflow-x: auto;">
+                                <img src="./img/altitude/sp_08.jpg" alt="" class="figure-img"
+                                    style="height: 350px;object-fit:contain;">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- other -->
+                    <div id="other" class="tabcontent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table id="otherta">
+                                        <tr>
+                                            <td>
+                                                <blockquote>開車</blockquote>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <!-- <h5 style="color:#71A2B6;font-weight: 600;">雪山登山口</h5> -->
+                                                    <blockquote>
+                                                        國道3號下竹林交流道，經竹東市區循122縣道抵清泉、土場，沿大鹿林道循指標往觀霧前進，即可抵達觀霧國家森林遊樂區。
+                                                    </blockquote>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <blockquote>大眾運輸</blockquote>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <!-- <h5 style="color:#71A2B6;font-weight: 600;">雪山登山口</h5> -->
+                                                    <blockquote>
+                                                        無大眾交通工具。 
+                                                    </blockquote>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <!-- footer -->
+    <div class="footer1" id="footer1">
+        <div class="container ">
+            <div style="height: 30px;"></div>
+            <footer class="py-3 my-4 ">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link " aria-current="page"
+                            style="font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link active">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link ">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <!-- map金鑰 -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo2QyrlgRo3nJdojD2ZOjNLsDOJfSJQ4c&callback=initMap&v=weekly"
+        defer></script>
+    <!-- 產生map -->
+    <script>
+        let map;
+        let marker;
+        let infowindow;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 24.473009171838594, lng: 121.20898964550197 },
+                zoom: 13,
+                // mapTypeId: 'terrain'
+            });
+
+            function Location(title, lat, lng) {
+                this.title = title
+                this.lat = lat
+                this.lng = lng
+                this.loc = { lat: lat, lng: lng }
+            }
+
+            const landmarks = new Map([
+                [0, new Location("大霸尖山", 24.45774917, 121.25804153)],
+                [1, new Location("小霸尖山", 24.4559, 121.251627)],
+                [2, new Location("伊澤山", 24.46999589, 121.24361394)],
+                [3, new Location("加利山", 24.45950678, 121.21620739)]
+            ])
+
+            info = ['<h5>大霸尖山 3492m</h5>' + '<img src="./img/8-1.jpg"style="height:150px;width:200px; object-fit: cover;">',
+            '<h5>小霸尖山 3418m</h5>' + '<img src="./img/8-2.jpg" style="height:150px;width:200px; object-fit: cover;">',
+            '<h5>伊澤山 3297m</h5>' + '<img src="./img/8-3.jpg" style="height:150px;width:200px; object-fit: cover;">',
+            '<h5>加利山 3112m</h5>' + '<img src="./img/8-4.jpg" style="height:150px;width:200px; object-fit: cover;">',
+            ]
+
+
+            function Points(lat, lng) {
+                this.lat = lat
+                this.lng = lng
+                this.point = { lat: parseFloat(lat), lng: parseFloat(lng) }
+            }
+
+            window.onload = function () {
+
+                fetch("./json/tracks08.geojson")
+                    .then(function (res) {
+                        return res.json()
+                    })
+
+                    .then(function (jsonObj) {
+                        a = jsonObj.features[0].geometry.coordinates[0]
+                        p = []
+                        // console.log(a.length+"a")
+                        path = []
+                        for (let k = 0; k < a.length; k += 1) {
+                            p.push(new Points(a[k][1], a[k][0]))
+                            path.push(p[k].point)
+                        }
+
+                        // console.log(p.length+"p")
+                        // console.log(path)
+
+                        const hikePath = new google.maps.Polyline({
+                            path: path,
+                            geodesic: true,
+                            strokeColor: "#FF0000",
+                            strokeOpacity: 1.0,
+                            strokeWeight: 2,
+                        })
+                        hikePath.setMap(map);
+
+                    });
+
+
+                for (let i = 0; i < landmarks.size; i++) {
+                    marker = new google.maps.Marker({
+                        position: landmarks.get(i).loc,
+                        map: map,
+                        title: landmarks.get(i).title,
+                        icon:"./img/icons8-mountain-48.png"
+                    })
+                    content = info[i]
+                    call(marker, content)
+                }
+
+                window.initMap = initMap;
+            }
+
+            function call(marker, content) {
+                infowindow = new google.maps.InfoWindow({
+                    content: content,
+
+                })
+
+                marker.addListener("click", function () {
+                    infowindow.setContent(content)
+                    infowindow.open({
+                        anchor: marker,
+                        map
+                    })
+                })
+            }
+        }
+
+
+    </script>
+    <!-- Tab切換  -->
+    <script>
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = "khaki";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

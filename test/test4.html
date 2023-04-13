@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo2QyrlgRo3nJdojD2ZOjNLsDOJfSJQ4c&callback=initMap&v=weekly"
+        defer></script>
+</head>
+<style>
+    #map {
+        height: 600px;
+    }
+</style>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 24.390701446415104, lng: 121.22856880947107 },
+                zoom: 13
+            })
+            function Points(lat, lng) {
+                this.lat = lat
+                this.lng = lng
+                this.point = { lat: parseFloat(lat), lng: parseFloat(lng) }
+            }
+            window.onload = function () {
+                fetch("./json01/tp.php")
+                    .then(function (res) {
+                        return res.json()
+                    })
+                    .then(function (jsonObj) {
+                        a = jsonObj.features[0].geometry.coordinates[0]
+                        p = []
+                        // console.log(a)
+                        path = []
+                        for (i = 0; i < a.length; i += 1) {
+                            p.push(new Points(a[i][1], a[i][0]))
+                            path.push(p[i].point)
+                        }
+                        // console.log(p)
+                        console.log(path)
+
+                        const hikePath = new google.maps.Polyline({
+                            path: path,
+                            geodesic: true,
+                            strokeColor: "#FF0000",
+                            strokeOpacity: 1.0,
+                            strokeWeight: 2,
+                        })
+                        hikePath.setMap(map);
+
+                    });
+
+             
+
+                window.initMap = initMap
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

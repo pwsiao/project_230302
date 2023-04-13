@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</head>
+
+<body>
+    <div id="table1"></div>
+
+    <script>
+        $.ajax({
+            url: "./weather.php",
+            success: function (res) {
+                var a = JSON.parse(res);
+                var b = a.cwbopendata.dataset.locations.location
+                var locname = b[0].locationName
+                var temp = b[0].weatherElement[0].time[0].elementValue.value
+                var date = b[0].weatherElement[0].time[0].dataTime.toString().substring(0, 10)
+                var time = b[0].weatherElement[0].time[0].dataTime.toString().substring(11, 16)
+
+                // var wd1 = b[0].weatherElement[10].time[0].elementValue.value.split('。')
+                // var wd2 = wd1[1].replace("降雨機率","").trim()
+
+                var wd1 = b[0].weatherElement[3].time[0].elementValue.value
+
+                console.log(b)
+
+
+                var row1 = "<table><thead><tr><td>日期</td>"
+                var row2 = "<tbody><tr><td>時間</td>"
+                var row3 = "<tr><td>溫度</td>"
+                var row4 = "<tr><td>降雨機率</td>"
+                for (let i = 0; i < 30; i++) {
+                    row1 += "<td>" + b[0].weatherElement[0].time[i].dataTime.toString().substring(5, 10) + "</td>"
+                    row2 += "<td>" + b[0].weatherElement[0].time[i].dataTime.toString().substring(11, 16) + "</td>"
+                    row3 += "<td>" + b[0].weatherElement[0].time[i].elementValue.value + "</td>"
+                }
+                for (let i = 0; i < 15; i++){
+                    row4 += "<td colspan=2>" + b[0].weatherElement[3].time[i].elementValue.value + "%</td>" 
+                }
+                table1 = row1 + "</tr></thead>" + row2 + "</tr>" + row3 + "</tr>" + row4 +"</tr></tbody></table>"
+                document.getElementById("table1").innerHTML = table1
+
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

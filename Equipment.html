@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>裝備清單</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./generalstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        table {
+            table-layout: auto;
+            width: auto;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid white;
+            padding: 10px;
+        }
+
+        td {
+            width: 500px;
+        }
+
+
+        .td1 {
+            width: 100px;
+            text-align: center;
+        }
+
+        label {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .Agroup {
+            background-color: rgb(160, 236, 210);
+        }
+
+        .Bgroup {
+            background-color: rgb(219, 236, 160);
+        }
+
+        .Cgroup {
+            background-color: rgb(226, 230, 182);
+        }
+
+        .Dgroup {
+            background-color: rgb(236, 187, 240);
+        }
+
+        .Egroup {
+            background-color: rgb(160, 236, 171);
+        }
+
+        input[type="checkbox"]:checked+span {
+            opacity: 0.7;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header style="position: relative;">
+        <img src="./img/IMG_8887.JPG" alt="" style="width: 100%; opacity:0.8; height: 320px; object-fit: cover;">
+        <h1 id="header"></h1>
+    </header>
+    <script>
+        setTimeout(header, 1200)
+        function header() {
+            document.getElementById("header").innerHTML = "裝備清單"
+        }
+    </script>
+
+    <!-- nav -->
+    <div style=" width:100%; " class="nav1">
+        <div class="container">
+            <nav class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link " aria-current="page"
+                            style="color:#b7e792; font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link ">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link active">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 留白排版用 -->
+    <div style="height: 50px;"></div>
+
+    <!-- content  -->
+    <div class="container  d-flex justify-content-center" style="width: 80%;">
+        <div class="row">
+            <div class="col-md-12">
+                <table>
+                    <tr>
+                        <td rowspan="6" class="td1 Agroup">
+                            <h5>登山用</h5>
+                        </td>
+                        <td class="Agroup"><label for="a1"><input type="checkbox" id="a1"><span>背包和防雨套</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Agroup"><label for="a2"><input type="checkbox" id="a2"><span>登山杖 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Agroup"><label for="a3"><input type="checkbox" id="a3"><span>頭燈和備用電池 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Agroup"><label for="a4"><input type="checkbox" id="a4"><span>睡袋 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Agroup"><label for="a5"><input type="checkbox" id="a5"><span>睡墊 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Agroup"><label for="a6"><input type="checkbox" id="a6"><span>急救包/個人藥品</span></label>
+                        </td>
+                    </tr>
+
+                    <td rowspan="11" class="td1 Bgroup">
+                        <h5>著裝</h5>
+                    </td>
+                    <td class="Bgroup"><label for="b1"><input type="checkbox" id="b1"><span>底層衣物(吸濕排汗薄短袖)
+                            </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b2"><input type="checkbox"
+                                    id="b2"><span>中層衣物(刷毛、化纖或羽絨外套)</span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b3"><input type="checkbox" id="b3"><span>最外層衣物(防水防風外套)
+                                </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b4"><input type="checkbox" id="b4"><span>登山鞋 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b5"><input type="checkbox" id="b5"><span>遮陽帽 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b6"><input type="checkbox" id="b6"><span>保暖帽 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b7"><input type="checkbox" id="b7"><span>頭巾 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b8"><input type="checkbox" id="b8"><span>保暖手套 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b9"><input type="checkbox" id="b9"><span>襪子 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b10"><input type="checkbox" id="b10"><span>備用衣物 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Bgroup"><label for="b11"><input type="checkbox" id="b11"><span>二件式雨衣褲</span></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="6" class="td1 Cgroup">
+                            <h5>食</h5>
+                        </td>
+                        <td class="Cgroup"><label for="c1"><input type="checkbox"
+                                    id="c1"><span>飲用水（水袋或水瓶）</span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Cgroup"><label for="c2"><input type="checkbox" id="c2"><span>早餐或協作訂餐 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Cgroup"><label for="c3"><input type="checkbox" id="c3"><span>午餐 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Cgroup"><label for="c4"><input type="checkbox" id="c4"><span>晚餐或協作訂餐 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Cgroup"><label for="c5"><input type="checkbox" id="c5"><span>行動糧 </span></label></td>
+                    </tr>
+                    <tr>
+                        <td class="Cgroup"><label for="c6"><input type="checkbox" id="c6"><span>炊具和打火機 </span></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="td1 Dgroup">
+                            <h5>證件</h5>
+                        </td>
+                        <td class="Dgroup"><label for="d1"><input type="checkbox" id="d1"><span>身分證和健保卡</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Dgroup"><label for="d2"><input type="checkbox" id="d2"><span>入山證和入園證</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Dgroup"><label for="d3"><input type="checkbox" id="d3"><span>手機和離線地圖</span></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="6" class="td1 Egroup">
+                            <h5>其他</h5>
+                        </td>
+                        <td class="Egroup"><label for="e1"><input type="checkbox" id="e1"><span>行動電源 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Egroup"><label for="e2"><input type="checkbox" id="e2"><span>塑膠袋/垃圾袋 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Egroup"><label for="e3"><input type="checkbox" id="e3"><span>輕便拖鞋 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Egroup"><label for="e4"><input type="checkbox" id="e4"><span>個人盥洗用品 </span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Egroup"><label for="e5"><input type="checkbox" id="e5"><span>衛生紙/生理用品</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Egroup"><label for="e6"><input type="checkbox" id="e6"><span>備用眼鏡 </span></label>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- footer -->
+    <div class="footer1" id="footer1">
+        <div class="container ">
+            <div style="height: 30px;"></div>
+            <footer class="py-3 my-4 ">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link " aria-current="page"
+                            style="font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link active">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link ">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北大武山</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./generalstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        ul>li>a {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .animate__zoomIn {
+            --animate-duration: 2s;
+            --animate-delay: 2s;
+        }
+
+        header>h1 {
+            letter-spacing: 13px;
+            font-size: 65px;
+            font-style: italic;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tablink {
+            box-sizing: border-box;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+            background-color: wheat;
+            color: black;
+            border: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .tablink:hover {
+            background-color: rgb(240, 230, 140, 0.7);
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            box-sizing: border-box;
+            background-color: khaki;
+            color: black;
+            display: none;
+            padding: 60px 50px;
+            height: 100%;
+        }
+
+        table {
+            table-layout: auto;
+            /* width: auto; */
+
+            border-collapse: separate;
+            border-spacing: 0;
+
+        }
+
+
+        tr,
+        td {
+            /* width: max-content; */
+
+            /* height: 30px; */
+            text-align: center;
+            padding: 10px 30px;
+            border: 2px solid white;
+            background-color: blanchedalmond;
+        }
+
+        #infota td:nth-child(2),
+        #otherta td:nth-child(2) {
+            padding: 10px 70px 10px 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header style="position: relative;">
+        <img src="./img/6.jpg" alt="" style="width: 100%; opacity:0.8; height: 320px; object-fit: cover;object-position: 50% 30%;">
+        <h1 class="animate__animated animate__zoomIn" >
+            北大武山</h1>
+    </header>
+
+    <!-- nav -->
+    <div class="nav1" style=" width:100%; ">
+        <div class="container">
+            <nav class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link" aria-current="page"
+                            style="color:#b7e792; font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show active" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                            <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                            <li class="nav-item"><a href="./Weather.html" class="nav-link">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 留白排版用 -->
+    <div style="height: 50px;"></div>
+
+
+    <div class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" style="width: 80%;">
+            <!-- 內文 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北大武山為中央山脈南端最後一座海拔超過3千公尺以上的高山，名列台灣五嶽之一，當地排灣族視為聖山，稱之為「Meli-miligang」，意為夢幻之美！擁有全臺面積最大的原始林，蘊藏著豐富的生物資源。從舊登山口沿途行經檜谷山莊、大武祠至北大武山頂，共約9公里，海拔變化約有1549公尺，都在南臺灣自然美景的最精華區域「大武山自然保留區」及「雙鬼湖野生動物重要棲息環境」內。而最令人驚豔的著名美景則是秋冬季的雲海。
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <!-- Tab首列 -->
+            <div class="row">
+                <div class="col-md-3"><button class="tablink" onclick="openPage('info', this)"
+                        id="defaultOpen">基本資料</button>
+                </div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('gmap', this)">地理資訊</button></div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('route', this)">建議行程</button>
+                </div>
+                <div class="col-md-3"><button class="tablink" onclick="openPage('other', this)">交通方式</button>
+                </div>
+            </div>
+            <!-- Tab內文 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- info -->
+                    <div id="info" class="tabcontent">
+                        <div class="container d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table id="infota">
+                                        <tr>
+                                            <td style="border-top-left-radius: 10px;">所在縣市</td>
+                                            <td style="border-top-right-radius: 10px;">屏東縣泰武鄉、臺東縣金峰鄉</td>
+                                        </tr>
+                                        <tr>
+                                            <td>百岳</td>
+                                            <td>北大武山 3092m </td>
+                                        </tr>
+                                        <tr>
+                                            <td>里程</td>
+                                            <td>單程12公里</td>
+                                        </tr>
+                                        <tr>
+                                            <td>海拔高度</td>
+                                            <td>1550~3092公尺</td>
+                                        </tr>
+                                        <tr>
+                                            <td>高度落差</td>
+                                            <td>1542公尺</td>
+                                        </tr>
+                                        <tr>
+                                            <td>管理單位</td>
+                                            <td>屏東林區管理處</td>
+                                        </tr>
+                                        <tr>
+                                            <td>申請入園</td>
+                                            <td>否</td>
+                                        </tr>
+                                        <tr>
+                                            <td>申請入山</td>
+                                            <td>是，<a style="text-decoration: none;color: green;" target="_blank"
+                                                    href="https://nv2.npa.gov.tw/NM107-604Client/">前往申請</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-bottom-left-radius: 10px;">相關山屋</td>
+                                            <td style="border-bottom-right-radius: 10px;"> 檜谷山莊
+                                                <a class="btn bg-warning"
+                                                    href="https://kgonline.forest.gov.tw/">宿營地查詢</a>
+
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- map -->
+                    <div id="gmap" class="tabcontent">
+                        <h3></h3>
+                        <div id="map" style="height: 400px;width: 100%;"></div>
+
+                    </div>
+                    <!-- route -->
+                    <div id="route" class="tabcontent">
+                        <h3></h3>
+                        <div>
+                            <blockquote>
+                                D1: 北大武新登山口→(3k,100分鐘)→舊登山口→(4k,195分鐘)→檜谷山莊
+                            </blockquote>
+                            <blockquote>
+                                D2: 檜谷山莊→(1.5k,65分鐘)→大武神木→(2.5k,195分鐘)→大武祠→(1k,65分鐘)→北大武山→(5k,250分鐘)→檜谷山莊
+                            </blockquote>
+                            <blockquote>
+                                D3: 檜谷山莊→(4k,135分鐘)→舊登山口→(3k,70分鐘)→北大武新登山口
+                            </blockquote>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <figure style="overflow-x: auto;">
+                                <img src="./img/altitude/sp_06.jpg" alt="" class="figure-img"
+                                    style="height: 400px;object-fit:contain;">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- other -->
+                    <div id="other" class="tabcontent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table id="otherta">
+                                        <tr>
+                                            <td>
+                                                <blockquote>開車</blockquote>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <!-- <h5 style="color:#71A2B6;font-weight: 600;">雪山登山口</h5> -->
+                                                    <blockquote>
+                                                        1.國道3號竹田系統交流道→萬巒市區→185縣道→佳泰公路→泰武部落→大武山之門→產業道路最末端即為登山口。
+                                                    </blockquote>
+                                                    <blockquote>
+                                                        2.國道3號麟洛交流道→台1線→內埔市區→187縣道東行至185縣道→佳泰公路→泰武部落→大武山之門→產業道路最末端即為登山口。
+                                                    </blockquote>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <blockquote>大眾運輸</blockquote>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <!-- <h5 style="color:#71A2B6;font-weight: 600;">雪山登山口</h5> -->
+                                                    <blockquote>
+                                                        無大眾交通工具。 
+                                                    </blockquote>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <!-- footer -->
+    <div class="footer1" id="footer1">
+        <div class="container ">
+            <div style="height: 30px;"></div>
+            <footer class="py-3 my-4 ">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link " aria-current="page"
+                            style="font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link active">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link ">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <!-- map金鑰 -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo2QyrlgRo3nJdojD2ZOjNLsDOJfSJQ4c&callback=initMap&v=weekly"
+        defer></script>
+    <!-- 產生map -->
+    <script>
+        let map;
+        let marker;
+        let infowindow;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 22.61489598339688,  lng: 120.7381809162577 },
+                zoom: 13,
+                // mapTypeId: 'terrain'
+            });
+
+            function Location(title, lat, lng) {
+                this.title = title
+                this.lat = lat
+                this.lng = lng
+                this.loc = { lat: lat, lng: lng }
+            }
+
+            const landmarks = new Map([
+                [0, new Location("北大武山", 22.6270425,120.76139447)],
+            ])
+
+            info = ['<h5>北大武山 3092m</h5>' + '<img src="./img/6-1.jpg" alt="Hehuan" style="height:150px;width:200px; object-fit: cover;">']
+
+
+            function Points(lat, lng) {
+                this.lat = lat
+                this.lng = lng
+                this.point = { lat: parseFloat(lat), lng: parseFloat(lng) }
+            }
+
+            window.onload = function () {
+
+                fetch("./json/tracks06.geojson")
+                    .then(function (res) {
+                        return res.json()
+                    })
+
+                    .then(function (jsonObj) {
+                        a = jsonObj.features[0].geometry.coordinates[1]
+                        p = []
+                        console.log(a)
+                        path = []
+                        for (k = 0; k < a.length; k += 1) {
+                            p.push(new Points(a[k][1], a[k][0]))
+                            path.push(p[k].point)
+                        }
+                        // console.log(p)
+                        // console.log(path)
+
+                        const hikePath = new google.maps.Polyline({
+                            path: path,
+                            geodesic: true,
+                            strokeColor: "#FF0000",
+                            strokeOpacity: 1.0,
+                            strokeWeight: 2,
+                        })
+                        hikePath.setMap(map);
+
+                    });
+
+
+                for (let i = 0; i < landmarks.size; i++) {
+                    marker = new google.maps.Marker({
+                        position: landmarks.get(i).loc,
+                        map: map,
+                        title: landmarks.get(i).title,
+                        icon:"./img/icons8-mountain-48.png"
+                    })
+                    content = info[i]
+                    call(marker, content)
+                }
+
+                window.initMap = initMap;
+            }
+
+            function call(marker, content) {
+                infowindow = new google.maps.InfoWindow({
+                    content: content,
+
+                })
+
+                marker.addListener("click", function () {
+                    infowindow.setContent(content)
+                    infowindow.open({
+                        anchor: marker,
+                        map
+                    })
+                })
+            }
+        }
+
+
+    </script>
+    <!-- Tab切換  -->
+    <script>
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = "khaki";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo2QyrlgRo3nJdojD2ZOjNLsDOJfSJQ4c&callback=initMap&v=weekly"
+        defer></script>
+</head>
+
+<body>
+
+    <div id="map" style="height: 600px;"></div>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 11,
+                center: { lat: 24.390701446415104, lng: 121.22856880947107 },
+                mapTypeId: "terrain",
+            });
+            const flightPlanCoordinates = 
+            [
+                { lat: 121.255, lng: 24.39227 },
+                {lat: 121.253481, lng: 24.393156},
+                { lat: 121.251719, lng: 24.393467 },
+                { lat: 121.249597, lng: 24.393651},
+                { lat: 121.247148, lng: 24.394062 },
+                { lat: 121.245725, lng: 24.39446 },
+                {lat: 121.243321, lng: 24.393593},
+                { lat: 121.241396, lng: 24.392207 },
+                {lat: 121.239744, lng: 24.390362},
+                {lat: 121.238094, lng: 24.389273 },
+                {lat: 121.236287, lng: 24.387631 },
+                { lat: 121.235825, lng: 24.385547 },
+                { lat: 121.233946, lng: 24.383909 }
+            ];
+//             [
+//     { lat: 37.772, lng: -122.214 },
+//     { lat: 21.291, lng: -157.821 },
+//     { lat: -18.142, lng: 178.431 },
+//     { lat: -27.467, lng: 153.027 },
+//   ];
+            const flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: "#FF0000",
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
+            });
+
+            flightPath.setMap(map);
+        }
+
+        window.initMap = initMap;
+    </script>
+</body>
+
+</html>

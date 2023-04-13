@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+/* nav字體 */
+ul>li>a {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 標題動畫 */
+@keyframes mymove {
+    from {
+        top: 30%;
+        left: 0%;
+    }
+
+    to {
+        top: 30%;
+        left: 50%;
+    }
+}
+
+/* 標題 */
+#header{
+
+    letter-spacing: 13px;
+    font-size: 65px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mymove 1S;
+    animation-delay:1.2s;
+    animation-timing-function: ease-in;
+}
+header{
+    position: relative;
+}
+
+.nav1{
+    background-color: #60B2E5; 
+    width: 100%;
+    
+}
+
+a[class*="nav-link"]{
+    color: white;
+    font-size: 18px;
+}
+
+
+.sub{
+    font-size: 16px;
+    padding-left: 7px;
+    color: blue;
+}
+
+#footer1 a[class*="nav-link"]{
+    color: #73c941;
+}
+
+.footer1{
+    /* background-color: rgba(143, 220, 142,0.2); */
+    
+    background-image: url(./img/grass.png);
+    background-size: cover;
+    height: 400px;
+    background-position-y: 40%;
+}

@@ -1,0 +1,115 @@
+{
+    "mountains":
+    [
+        {
+          "index":0,
+          "routname":"雪山主東",
+          "peaks":
+          [
+            {"name":"雪山","location":[ 24.38340386,121.23176492],"num":"02","altitude":"3886m"},
+            {"name":"雪山東峰","location":[ 24.38869044,121.27208358],"num":"75","altitude":"3201m"}
+          ],
+          "tracks":"./json/tracks01.geojson",
+          "center": { "lat": 24.38869044, "lng": 121.27208358 }
+        },
+        {
+          "index":1,
+          "routname":"奇萊南華",
+          "peaks":
+          [
+            {"name":"奇萊南峰","location":[ 24.06121267,121.27981797],"num":"41","altitude":"3358m"},
+            {"name":"南華山","location":[ 24.03933056,121.28592778],"num":"76","altitude":"3184m"}
+          
+          ],
+          "tracks":"./json/tracks03.geojson",
+          "center": { "lat": 24.045919142376345,  "lng": 121.2561788277317 }
+        },
+        {
+          "index":2,
+          "routname":"嘉明湖步道",
+          "peaks":
+          [
+            {"name":"向陽山","location":[ 23.28427269,120.99241436],"num":"17","altitude":"3602m"},
+            {"name":"三叉山","location":[ 23.29716989,121.0286635],"num":"27","altitude":"3496m"}
+          ],
+          "tracks":"./json/tracks04.geojson",
+          "center": { "lat": 23.27206339165814,  "lng": 120.99321345499845 }
+        },
+        {
+          "index":3,
+          "routname":"北大武山",
+          "peaks":
+          [
+            {"name":"北大武山","location":[ 22.6270425,120.76139447],"num":"90","altitude":"3092m"}
+          ],
+          "tracks":"./json/tracks06.geojson",
+          "center": { "lat": 22.61489598339688,  "lng": 120.7381809162577 }
+        },
+        {
+          "index":4,
+          "routname":"合歡群峰",
+          "peaks":
+          [
+            {"name":"合歡北峰","location":[ 24.181499,121.28159494],"num":"34","altitude":"3422m"},
+            {"name":"合歡東峰","location":[ 24.135632,121.280981],"num":"35","altitude":"3421m"},
+            {"name":"合歡主峰","location":[ 24.14263147,121.27117081],"num":"37","altitude":"3417m"},
+            {"name":"合歡西峰","location":[ 24.17761236,121.24453367],"num":"82","altitude":"3145m"},
+            {"name":"石門山","location":[ 24.15243561,121.28459122],"num":"90","altitude":"3237m"}
+          ],
+          "tracks":"./json/tracks02.geojson",
+          "center": { "lat": 24.173675633848504,    "lng": 121.28808375172136 }
+        },
+        {
+          "index":5,
+          "routname":"大小霸尖山",
+          "peaks":
+          [
+            {"name":"大霸尖山","location":[ 24.45774917,121.25804153],"num":"28","altitude":"3492m"},
+            {"name":"小霸尖山","location":[ 24.4559,121.251627],"num":"36","altitude":"3418m"},
+            {"name":"伊澤山","location":[ 24.46999589,121.24361394],"num":"53","altitude":"3297m"},
+            {"name":"加利山","location":[ 24.45950678,121.21620739],"num":"86","altitude":"3112m"}
+          ],
+          "tracks":"./json/tracks08.geojson",
+          "center": { "lat": 24.48345604372397,   "lng": 121.19308847036658 }
+        },
+        {
+          "index":6,
+          "routname":"玉山主峰",
+          "peaks":
+          [
+            {"name":"玉山主峰","location":[ 23.46999192,120.9572655],"num":"01","altitude":"3952m"}
+       
+          ],
+          "tracks":"./json/tracks05.geojson",
+          "center": { "lat": 23.473469804211053,    "lng": 120.9243929970344 }
+        },
+        {
+          "index":7,
+          "routname":"南湖群峰",
+          "peaks":
+          [
+            {"name":"南湖大山","location":[  24.36181086,121.43937397],"num":"08","altitude":"3742m"},
+            {"name":"南湖東峰","location":[ 24.365237,121.452949],"num":"14","altitude":"3632m"},
+            {"name":"南湖北山","location":[ 24.38367553,121.43718564],"num":"22","altitude":"3536m"},
+            {"name":"審馬陣山","location":[ 24.38021442,121.41746211],"num":"83","altitude":"3141m"}
+          ],
+          "tracks":"./json/tracks07.geojson",
+          "center": { "lat": 24.371126792063592,    "lng": 121.44303240910467 }
+        },
+        {
+          "index":8,
+          "routname":"南橫三星",
+          "peaks":
+          [
+            {"name":"塔關山","location":[ 23.25195175,120.94123161],"num":"72","altitude":"3222m"},
+            {"name":"關山嶺山","location":[  23.27098175,120.95944644],"num":"77","altitude":"3176m"},
+            {"name":"庫哈諾辛山","location":[ 23.26275989,120.90002969],"num":"85","altitude":"3115m"}
+          ],
+          "tracks":"./json/tracks09.geojson",
+          "center": { "lat": 23.25819379380632,    "lng": 120.93040101258265 }
+        }
+   
+        
+
+    ]
+}

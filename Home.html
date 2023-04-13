@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Mountain</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./generalstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+        div>img {
+
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            opacity: 90%;
+        }
+
+        .con2:hover .h1style {
+            display: block;
+        }
+
+        .con2:hover img {
+            opacity: 60%;
+        }
+
+        .h1style {
+            border-radius: 10px;
+            padding: 18px;
+            background-color: rgba(239, 165, 68, 0.8);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            display: none;
+        }
+
+        .animate__fadeIn {
+            --animate-duration: 1s;
+            --animate-delay: 0.4s;
+        }
+
+        .title {
+            float: left;
+            width: fit-content;
+            padding: 10px;
+            color: rgb(81, 144, 81);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <!-- <header>
+        <img src="./img/IMG_8887.JPG" alt="" style="width: 100%; opacity:0.8; height: 320px; object-fit: cover;">
+        <h1 id="header"></h1>
+    </header>
+    <script>
+        setTimeout(header, 1200)
+        function header() {
+            document.getElementById("header").innerHTML = "Hello Mountain"
+        }
+    </script> -->
+
+    <!-- nav -->
+    <div class="nav1" style="position: fixed; z-index: 3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-center">
+                    <!-- <h3 class="title me-4">Hello Mountain</h3> -->
+                    <nav class="d-flex  py-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="./Home.html" class="nav-link active" aria-current="page"
+                                    style="color:#b7e792 ; font-size:20px">Hello Mountain</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="true">熱門百岳路線</a>
+                                <ul class="dropdown-menu " data-bs-popper="static">
+                                    <li class="sub">北部</li>
+                                    <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                    <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                    <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                    <li class="sub">中部</li>
+                                    <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                    <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                    <li class="sub">南部</li>
+                                    <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                    <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                    <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                    <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                            <li class="nav-item"><a href="./Weather.html" class="nav-link">天氣預報</a></li>
+                            <li class="nav-item"><a href="./Equipment.html" class="nav-link">裝備清單</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="true">官方網站入口</a>
+                                <ul class="dropdown-menu " data-bs-popper="static">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://www.taroko.gov.tw/">太魯閣國家公園</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- content -->
+    <div class="container mx-auto" style="width:80%;">
+        <div class="row">
+            <div class="col-md-12" style="height: 200px; position: relative; top:60px"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="position: relative;">
+                <a href="./MtSylvia_01.html">
+                    <div class="con2">
+                        <img src="./img/1.JPG" style="object-position: 50% 70%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">雪山主東</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./HeHuan_02.html">
+                    <div class="con2">
+                        <img src="./img/2.JPG" style="object-position: 50% 60%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">合歡群峰</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./QilaiNanhua_03.html">
+                    <div class="con2">
+                        <img src="./img/3.JPG" style="object-position: 50% 80%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">奇萊南華</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./JiaMing_04.html">
+                    <div class="con2">
+                        <img src="./img/4.JPG" style="object-position: 50% 80%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">嘉明湖步道</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./MtJade_05.html">
+                    <div class="con2">
+                        <img src="./img/5.JPG" style="object-position: 50% 50%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">玉山主峰</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./BaDaWu_06.html">
+                    <div class="con2">
+                        <img src="./img/6.JPG" style="object-position: 50% 30%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">北大武山</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./NanHu_07.html">
+                    <div class="con2">
+                        <img src="./img/7.JPG" style="object-position: 50% 20%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">南湖群峰</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./DaBa_08.html">
+                    <div class="con2">
+                        <img src="./img/8.JPG" style="object-position: 50% 40%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">大小霸尖山</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <a href="./NanHeng_09.html">
+                    <div class="con2">
+                        <img src="./img/9.JPG" style="object-position: 50% 10%;">
+                        <h1 class="h1style animate__animated animate__fadeIn">南橫三星</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-12" style="height: 100px;">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer1" id="footer1">
+        <div class="container ">
+            <div style="height: 30px;"></div>
+            <footer class="py-3 my-4 ">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link " aria-current="page"
+                            style="font-size:20px">Hello Mountain</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                            <ul class="dropdown-menu " data-bs-popper="static">
+                                <li class="sub">北部</li>
+                                <li><a class="dropdown-item" href="./DaBa_08.html">大小霸尖山</a></li>
+                                <li><a class="dropdown-item" href="./NanHu_07.html">南湖群峰</a></li>
+                                <li><a class="dropdown-item" href="./MtSylvia_01.html">雪山主東</a></li>
+                                <li class="sub">中部</li>
+                                <li><a class="dropdown-item" href="./HeHuan_02.html">合歡群峰</a></li>
+                                <li><a class="dropdown-item" href="./QilaiNanhua_03.html">奇萊南華</a></li>
+                                <li class="sub">南部</li>
+                                <li><a class="dropdown-item" href="./MtJade_05.html">玉山主峰</a></li>
+                                <li><a class="dropdown-item" href="./NanHeng_09.html">南橫三星</a></li>
+                                <li><a class="dropdown-item" href="./BaDaWu_06.html">北大武山</a></li>
+                                <li><a class="dropdown-item" href="./JiaMing_04.html">嘉明湖步道</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Allroute.html" class="nav-link">路線一覽</a></li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link active">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link ">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" target="_blank" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.taroko.gov.tw/">太魯閣國家公園</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

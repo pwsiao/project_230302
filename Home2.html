@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Mountain</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./generalstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+        div>img {
+            border-radius: 10px;
+            width: 500px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .astyle {
+            display: block;
+            text-decoration: none;
+        }
+
+        .astyle:hover {
+            background-color: rgb(169, 248, 244)
+        }
+
+        .h1style {
+            border-radius: 10px 10px 0 0;
+            padding: 7px;
+            background-color: rgba(135, 222, 187, 0.849);
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 500px;
+            height: 250px;
+            perspective: 1000px;
+            padding: 0;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+
+        .flip-card-back {
+            border-radius: 10px;
+            background-color: #5d9bc4;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header style="position: relative;">
+        <img src="./img/IMG_8887.JPG" alt="" style="width: 100%; opacity:0.8; height: 320px; object-fit: cover;">
+        <h1 id="header"></h1>
+    </header>
+    <script>
+        setTimeout(header, 1200)
+        function header() {
+            document.getElementById("header").innerHTML = "Hello Mountain"
+        }
+    </script>
+
+    <!-- nav -->
+    <div class="nav1" >
+        <div class="container">
+            <nav class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./Home.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">熱門百岳路線</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li class="sub">北部</li>
+                            <li><a class="dropdown-item" href="#">大小霸尖山</a></li>
+                            <li><a class="dropdown-item" href="#">南湖群峰</a></li>
+                            <li class="sub">中部</li>
+                            <li><a class="dropdown-item" href="./MtSylvia.html">雪山主東</a></li>
+                            <li><a class="dropdown-item" href="#">合歡群峰</a></li>
+                            <li><a class="dropdown-item" href="#">奇萊南華</a></li>
+                            <li class="sub">南部</li>
+                            <li><a class="dropdown-item" href="#">玉山主峰</a></li>
+                            <li><a class="dropdown-item" href="#">南橫三星</a></li>
+                            <li><a class="dropdown-item" href="#">北大武山</a></li>
+                            <li class="sub">東部</li>
+                            <li><a class="dropdown-item" href="#">嘉明湖步道</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="./Weather.html" class="nav-link">天氣預報</a></li>
+                    <li class="nav-item"><a href="./Equipment.html" class="nav-link">裝備清單</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="true">官方網站入口</a>
+                        <ul class="dropdown-menu " data-bs-popper="static">
+                            <li><a class="dropdown-item" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                            <li><a class="dropdown-item" href="https://www.taroko.gov.tw/">太魯閣國家公園</a></li>
+                            <li><a class="dropdown-item" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                            <li><a class="dropdown-item" href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container mx-auto" >
+    <div class="row" >
+
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/1.jpg" alt="Mt.Sylvia">
+                </div>
+                <a href="./MtSylvia.html" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">雪山主東</h1>
+                        <h5>雪山主峰&nbsp;&nbsp;標高: 3886m</h5>
+                        <h5>雪山東峰&nbsp;&nbsp;標高: 3201m</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/2.jpg" alt="Hehuan">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">合歡群峰</h1>
+                        <table class="mx-auto">
+                            <tr>
+                                <td>
+                                    <h5>合歡北峰</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3422m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>合歡東峰</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3421m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>合歡主峰</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3417m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>石門山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3237m</h5>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/3.jpg" alt="QilaiNanhua">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">奇萊南華</h1>
+                        <table class="mx-auto">
+                            <tr>
+                                <td>
+                                    <h5>奇萊南峰</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3358m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>南華山</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3184m</h5>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/4.jpg" alt="JiaMing">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">嘉明湖步道</h1>
+                        <h5>向陽山&nbsp;&nbsp;標高: 3602m</h5>
+                        <h5>三叉山&nbsp;&nbsp;標高: 3496m</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/5.jpg" alt="Mt. Jade">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">玉山主峰</h1>
+                        <h5>玉山主峰&nbsp;&nbsp;標高: 3952m</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class=" flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/6.jpg" alt="BeiDaWu">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">北大武山</h1>
+                        <h5>北大武山&nbsp;&nbsp;標高: 3092m</h5>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class=" flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/7.jpg" alt="NanHu">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">南湖群峰</h1>
+                        <table class="mx-auto">
+                            <tr>
+                                <td>
+                                    <h5>南湖大山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3742m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>南湖東峰 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3632m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>南湖北山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3536m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>審馬陣山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3141m</h5>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class=" flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/8.jpg" alt="DaBa">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">大小霸尖山</h1>
+                        <table class="mx-auto">
+                            <tr>
+                                <td>
+                                    <h5>大霸尖山</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3492m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>小霸尖山</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3418m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>伊澤山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3297m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>加利山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3112m</h5>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <div class=" flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/9.jpg" alt="NanHeng">
+                </div>
+                <a href="https://www.google.com" target="_blank" class="flip-card-back astyle">
+                    <div>
+                        <h1 class="h1style">南橫三星</h1>
+                        <table class="mx-auto">
+                            <tr>
+                                <td>
+                                    <h5>塔關山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3222m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>關山嶺山 </h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3176m</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>庫哈諾辛山</h5>
+                                </td>
+                                <td>
+                                    <h5>&nbsp;&nbsp;標高: 3115m</h5>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 flip-card mx-auto mt-4">
+            <!-- 留白排版用 -->
+        </div>
+    </div>
+</div>
+    <!-- footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./Home.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                        aria-expanded="true">熱門百岳路線</a>
+                    <ul class="dropdown-menu " data-bs-popper="static">
+                        <li class="sub">北部</li>
+                        <li><a class="dropdown-item" href="#">大小霸尖山</a></li>
+                        <li><a class="dropdown-item" href="#">南湖群峰</a></li>
+                        <li class="sub">中部</li>
+                        <li><a class="dropdown-item" href="./MtSylvia.html">雪山主東</a></li>
+                        <li><a class="dropdown-item" href="#">合歡群峰</a></li>
+                        <li><a class="dropdown-item" href="#">奇萊南華</a></li>
+                        <li class="sub">南部</li>
+                        <li><a class="dropdown-item" href="#">玉山主峰</a></li>
+                        <li><a class="dropdown-item" href="#">南橫三星</a></li>
+                        <li><a class="dropdown-item" href="#">北大武山</a></li>
+                        <li class="sub">東部</li>
+                        <li><a class="dropdown-item" href="#">嘉明湖步道</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="./Weather.html" class="nav-link">天氣預報</a></li>
+                <li class="nav-item"><a href="./Equipment.html" class="nav-link">裝備清單</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown"
+                        aria-expanded="true">官方網站入口</a>
+                    <ul class="dropdown-menu " data-bs-popper="static">
+                        <li><a class="dropdown-item" href="https://www.spnp.gov.tw/">雪霸國家公園</a></li>
+                        <li><a class="dropdown-item" href="https://www.taroko.gov.tw/">太魯閣國家公園</a></li>
+                        <li><a class="dropdown-item" href="https://www.ysnp.gov.tw/">玉山國家公園</a></li>
+                        <li><a class="dropdown-item" href="https://recreation.forest.gov.tw/">台灣山林悠遊網</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
